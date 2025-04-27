@@ -7,6 +7,9 @@
     "mqtt": "^5.11.1",
     "redis": "^4.7.0"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
