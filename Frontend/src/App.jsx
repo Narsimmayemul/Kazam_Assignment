@@ -11,7 +11,7 @@ function App() {
   const fetchNotes = async () => {
     setLoading(true);
     try {
-      const res = await axios.get("http://localhost:5000/fetchAllTasks");
+      const res = await axios.get("https://kazam-assignment-1n4d.onrender.com/fetchAllTasks");
       setNotes(res.data);
       console.log(res.data);
     } catch (err) {
@@ -25,7 +25,7 @@ function App() {
     if (newNote.trim() === "") return;
     setAdding(true);
     try {
-      const res = await axios.post("http://localhost:5000/add", {
+      const res = await axios.post("https://kazam-assignment-1n4d.onrender.com/add", {
         task: newNote,
       });
       const addedTask = { task: newNote };
